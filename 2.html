@@ -1,0 +1,804 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ISEE Online con SPID (2025): guida completa, documenti, tempi e FAQ</title>
+  <meta name="description" content="ISEE online con SPID: chi può farlo, cosa serve, come compilare la DSU precompilata, tempi per ottenerlo e FAQ. Guida aggiornata e pratica." />
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="ISEE Online con SPID (2025): guida completa" />
+  <meta property="og:description" content="Chi può farlo, cosa serve, come si fa e quanto tempo ci vuole. Guida pratica con checklist e FAQ." />
+  <meta property="og:type" content="article" />
+  <meta property="og:locale" content="it_IT" />
+
+  <style>
+   :root{
+  --bg:#ffffff;
+  --text:#111827;         /* quasi nero */
+  --muted:#6b7280;        /* grigio */
+  --line:#e5e7eb;         /* bordi */
+  --soft:#f9fafb;         /* sfondo box */
+  --accent:#111827;       /* accento minimale */
+  --radius:14px;
+  --max: 980px;
+  --font: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  --font-sans: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+*{ box-sizing:border-box; }
+html,body{ height:100%; }
+
+body{
+  margin:0;
+  font-family: var(--font);
+  color: var(--text);
+  background: var(--bg);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a{ color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+a:hover{ opacity:.85; }
+
+.wrap{
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 28px 18px 70px;
+}
+
+/* Top bar */
+.top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  background: transparent;
+  border-radius: 0;
+  backdrop-filter: none;
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  font-weight: 800;
+  letter-spacing: .2px;
+  font-family: var(--font-sans);
+}
+
+.logo{
+  width: 10px;
+  height: 10px;
+  border-radius: 999px;
+  background: var(--text);
+  box-shadow: none;
+}
+
+.nav{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  font-family: var(--font-sans);
+}
+
+.chip{
+  padding: 8px 10px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  text-decoration: none;
+}
+
+.chip:hover{
+  border-color: var(--line);
+  background: var(--soft);
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* Hero */
+.hero{
+  margin-top: 22px;
+  padding: 0;
+  border-radius: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  position: relative;
+  overflow: visible;
+}
+
+.hero:before{ display:none; }
+
+.hero-grid{
+  display:grid;
+  grid-template-columns: 1fr;
+  gap: 18px;
+}
+
+.breadcrumbs{
+  color: var(--muted);
+  font-size: 13px;
+  margin-bottom: 10px;
+  font-family: var(--font-sans);
+}
+
+.title{
+  font-size: clamp(30px, 3.4vw, 48px);
+  line-height: 1.12;
+  margin: 0 0 14px;
+  letter-spacing: -0.6px;
+}
+
+.subtitle{
+  margin: 0 0 14px;
+  color: var(--muted);
+  font-size: 18px;
+  max-width: 70ch;
+  font-family: var(--font-sans);
+}
+
+.meta{
+  display:flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  color: var(--muted);
+  font-size: 13px;
+  font-family: var(--font-sans);
+}
+
+.badge{
+  display:inline-flex;
+  align-items:center;
+  gap: 8px;
+  padding: 6px 10px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.dot{
+  width: 6px;
+  height: 6px;
+  border-radius: 999px;
+  background: var(--text);
+}
+
+/* Right hero card: diventa un box editoriale semplice */
+.hero-card{
+  border: 1px solid var(--line);
+  background: var(--soft);
+  border-radius: var(--radius);
+  padding: 16px;
+  backdrop-filter: none;
+  max-width: 520px;
+}
+
+.hero-card h3{
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: .12em;
+  color: var(--muted);
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+}
+
+.quick{
+  display:grid;
+  gap: 10px;
+}
+
+.quick-item{
+  padding: 12px 12px;
+  border-radius: 12px;
+  background: #fff;
+  border: 1px solid var(--line);
+}
+
+.quick-item strong{
+  display:block;
+  font-size: 14px;
+  font-family: var(--font-sans);
+}
+
+.quick-item span{
+  color: var(--muted);
+  font-size: 13px;
+  font-family: var(--font-sans);
+}
+
+/* Layout */
+.grid{
+  display:grid;
+  grid-template-columns: 1fr 320px;
+  gap: 22px;
+  margin-top: 24px;
+}
+
+@media (max-width: 980px){
+  .grid{ grid-template-columns: 1fr; }
+}
+
+/* Main card diventa “pagina” editoriale */
+.card{
+  border: 0;
+  background: transparent;
+  border-radius: 0;
+  padding: 0;
+  box-shadow: none;
+}
+
+/* Indice laterale */
+.toc{
+  position: sticky;
+  top: 16px;
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--soft);
+  backdrop-filter: none;
+  font-family: var(--font-sans);
+}
+
+.toc h3{
+  margin: 0 0 10px;
+  font-size: 12px;
+  letter-spacing: .12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.toc a{
+  display:block;
+  padding: 10px 10px;
+  border-radius: 12px;
+  border: 1px solid transparent;
+  background: transparent;
+  margin-bottom: 8px;
+  font-size: 14px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+.toc a:hover{
+  background: #fff;
+  border-color: var(--line);
+}
+
+/* Tipografia articolo */
+article h2{
+  font-size: 24px;
+  margin: 34px 0 10px;
+  letter-spacing: -0.2px;
+}
+
+article h3{
+  font-size: 18px;
+  margin: 20px 0 8px;
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+p{
+  margin: 0 0 16px;
+  color: var(--text);
+  max-width: 75ch;
+}
+
+.lead{
+  font-size: 18px;
+  color: var(--muted);
+  border-left: 3px solid var(--line);
+  padding-left: 14px;
+  margin: 16px 0 20px;
+  font-family: var(--font-sans);
+}
+
+ul,ol{
+  margin: 10px 0 18px 22px;
+  color: var(--text);
+  max-width: 75ch;
+}
+
+li{ margin: 6px 0; }
+
+/* Callout minimal */
+.callout{
+  border: 1px solid var(--line);
+  background: var(--soft);
+  padding: 14px;
+  border-radius: var(--radius);
+  margin: 16px 0 22px;
+  max-width: 75ch;
+  font-family: var(--font-sans);
+}
+
+.callout.ok, .callout.warn{ border-color: var(--line); }
+
+.callout strong{
+  display:block;
+  margin-bottom: 6px;
+  color: var(--text);
+}
+
+/* Checklist */
+.checklist{
+  display:grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin: 12px 0 22px;
+}
+
+@media (max-width: 720px){
+  .checklist{ grid-template-columns: 1fr; }
+}
+
+.check{
+  padding: 12px 12px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.check small{
+  color: var(--muted);
+  display:block;
+  margin-top: 4px;
+  font-family: var(--font-sans);
+}
+
+/* Steps: numerazione pulita */
+.steps{
+  counter-reset: step;
+  margin: 12px 0 22px;
+  display:grid;
+  gap: 10px;
+}
+
+.step{
+  padding: 14px;
+  border-radius: var(--radius);
+  background: #fff;
+  border: 1px solid var(--line);
+  position: relative;
+  padding-left: 52px;
+  max-width: 75ch;
+}
+
+.step:before{
+  counter-increment: step;
+  content: counter(step);
+  position: absolute;
+  left: 14px;
+  top: 14px;
+  width: 28px;
+  height: 28px;
+  border-radius: 999px;
+  display:grid;
+  place-items:center;
+  font-weight: 700;
+  background: var(--soft);
+  border: 1px solid var(--line);
+  color: var(--text);
+  font-family: var(--font-sans);
+}
+
+.step strong{
+  display:block;
+  margin-bottom: 4px;
+  font-family: var(--font-sans);
+}
+
+/* FAQ */
+details{
+  border: 1px solid var(--line);
+  background: #fff;
+  border-radius: var(--radius);
+  padding: 12px 14px;
+  margin: 10px 0;
+  max-width: 75ch;
+}
+
+summary{
+  cursor: pointer;
+  font-weight: 700;
+  outline: none;
+  list-style: none;
+  font-family: var(--font-sans);
+}
+
+summary::-webkit-details-marker{ display:none; }
+
+details p{
+  margin-top: 10px;
+  color: var(--muted);
+  font-family: var(--font-sans);
+}
+
+/* CTA minimale */
+.cta{
+  margin-top: 22px;
+  padding: 16px;
+  border-radius: var(--radius);
+  border: 1px solid var(--line);
+  background: var(--soft);
+  display:flex;
+  gap: 12px;
+  align-items:flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-family: var(--font-sans);
+  max-width: 75ch;
+}
+
+.cta .left{ max-width: 560px; }
+.cta h3{ margin: 0 0 6px; }
+.cta p{ margin: 0; color: var(--muted); }
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+  padding: 10px 12px;
+  border-radius: 999px;
+  border: 1px solid var(--line);
+  background: #fff;
+  color: var(--text);
+  font-weight: 650;
+  text-decoration: none;
+  min-width: 200px;
+  font-family: var(--font-sans);
+}
+
+.btn.primary{
+  background: var(--text);
+  color: #fff;
+  border-color: var(--text);
+}
+
+.btn:hover{
+  opacity: .92;
+  text-decoration: none;
+}
+
+/* Footer */
+footer{
+  margin-top: 28px;
+  padding: 18px 0 0;
+  border-radius: 0;
+  border: 0;
+  border-top: 1px solid var(--line);
+  background: transparent;
+  color: var(--muted);
+  font-size: 13px;
+  font-family: var(--font-sans);
+}
+
+/* Separator */
+.hr{
+  height: 1px;
+  background: var(--line);
+  margin: 18px 0;
+}
+
+/* Ad placeholders */
+.ad{
+  border: 1px dashed var(--line);
+  background: var(--soft);
+  border-radius: var(--radius);
+  padding: 14px;
+  color: var(--muted);
+  font-size: 13px;
+  max-width: 75ch;
+  font-family: var(--font-sans);
+}
+
+.ad strong{ color: var(--text); display:block; margin-bottom: 6px; }
+
+  </style>
+
+  <!-- (Opzionale) JSON-LD FAQ per SEO -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Posso fare l’ISEE online se non ho SPID?",
+        "acceptedAnswer":{"@type":"Answer","text":"Per accedere in autonomia al servizio online INPS serve un’identità digitale (SPID, CIE o CNS). In alternativa puoi rivolgerti a un CAF o a un professionista abilitato."}
+      },
+      {
+        "@type":"Question",
+        "name":"Quanto tempo ci vuole per fare l’ISEE online?",
+        "acceptedAnswer":{"@type":"Answer","text":"Se hai dati e documenti pronti, la compilazione della DSU può richiedere circa 15–30 minuti. I tempi di elaborazione dell’attestazione variano in base alla completezza dei dati e alle verifiche."}
+      },
+      {
+        "@type":"Question",
+        "name":"Quanto dura l’ISEE?",
+        "acceptedAnswer":{"@type":"Answer","text":"In genere l’ISEE è valido fino al 31 dicembre dell’anno di presentazione e va rinnovato se ti serve anche per l’anno successivo."}
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <div class="wrap">
+    <header class="top">
+      <div class="brand">
+        <div class="logo" aria-hidden="true"></div>
+        <div>Guida Servizi</div>
+      </div>
+      <nav class="nav" aria-label="Navigazione">
+        <a class="chip" href="#chi-puo">Chi può farlo</a>
+        <a class="chip" href="#cosa-serve">Cosa serve</a>
+        <a class="chip" href="#come-fare">Come si fa</a>
+        <a class="chip" href="#tempi">Tempi</a>
+        <a class="chip" href="#faq">FAQ</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="hero-grid">
+        <div>
+          <div class="breadcrumbs">Home → Servizi → ISEE → <strong>ISEE online con SPID</strong></div>
+          <h1 class="title">ISEE online con SPID: chi può farlo, cosa serve, come si fa e tempi (2025)</h1>
+          <p class="subtitle">
+            Guida pratica per ottenere l’attestazione ISEE usando il portale INPS con SPID: checklist documenti,
+            passaggi chiari, casi in cui conviene il CAF e domande frequenti.
+          </p>
+          <div class="meta">
+            <span class="badge"><span class="dot"></span> Aggiornato: 24/12/2025</span>
+            <span class="badge">⏱ Lettura: 8–10 min</span>
+            <span class="badge">💡 Focus: DSU precompilata</span>
+          </div>
+        </div>
+
+        <aside class="hero-card">
+          <h3>In breve</h3>
+          <div class="quick">
+            <div class="quick-item">
+              <strong>Serve SPID?</strong>
+              <span>Sì (oppure CIE/CNS) per farlo da soli online.</span>
+            </div>
+            <div class="quick-item">
+              <strong>Tempo di compilazione</strong>
+              <span>Circa 15–30 minuti se hai tutto pronto.</span>
+            </div>
+            <div class="quick-item">
+              <strong>Se hai dubbi</strong>
+              <span>CAF utile con situazioni familiari/patrimoniali complesse.</span>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="grid">
+      <main>
+        <article class="card" aria-label="Articolo">
+          <p class="lead">
+            L’ISEE è il documento che fotografa la situazione economica del nucleo familiare e
+            viene richiesto per bonus e agevolazioni (assegno unico, bonus sociali, università, nido, ecc.).
+            Oggi puoi ottenerlo anche online tramite SPID, in modo più rapido e senza spostamenti.
+          </p>
+
+          <!-- Ad placeholder (opzionale, inserisci AdSense qui) -->
+          <div class="ad" role="note" aria-label="Spazio pubblicitario">
+            <strong>Spazio pubblicitario (AdSense)</strong>
+            Inserisci qui il tuo blocco annunci (es. display 728x90 / responsive).
+          </div>
+
+          <h2 id="perche-online">Perché conviene fare l’ISEE online con SPID</h2>
+          <ul>
+            <li><strong>Comodità:</strong> lo fai da casa, anche fuori orario d’ufficio.</li>
+            <li><strong>Velocità:</strong> spesso la DSU precompilata riduce inserimenti manuali.</li>
+            <li><strong>Controllo:</strong> puoi verificare dati e correggere eventuali incongruenze.</li>
+            <li><strong>Costi:</strong> online è gratuito; con CAF di solito è gratuito, ma dipende dal servizio e dalla complessità.</li>
+          </ul>
+
+          <div class="callout ok">
+            <strong>Consiglio pratico</strong>
+            Prima di iniziare, raccogli i dati di tutti i componenti del nucleo (redditi e patrimoni).
+            È il modo più semplice per evitare stop a metà procedura.
+          </div>
+
+          <h2 id="chi-puo">Chi può fare l’ISEE online con SPID (e chi no)</h2>
+          <h3>Può farlo online da solo</h3>
+          <ul>
+            <li>Chi ha <strong>SPID</strong> (o in alternativa <strong>CIE/CNS</strong>)</li>
+            <li>Chi rientra in un nucleo familiare “standard” e riesce a recuperare i dati richiesti</li>
+            <li>Chi è in grado di <strong>confermare/integrare</strong> i dati precompilati</li>
+          </ul>
+
+          <h3>Quando è meglio farsi aiutare (CAF o professionista)</h3>
+          <ul>
+            <li>Nuclei familiari complessi (separazioni, convivenze particolari, cambi recenti)</li>
+            <li>Patrimoni/conti/rapporti finanziari numerosi o difficili da ricostruire</li>
+            <li>Dubbi su <strong>composizione del nucleo</strong> o su dati da dichiarare</li>
+          </ul>
+
+          <div class="callout warn">
+            <strong>Attenzione</strong>
+            Se mancano autorizzazioni/dati di maggiorenni del nucleo o ci sono incongruenze, la procedura può bloccarsi
+            e potresti dover integrare informazioni prima di inviare la DSU.
+          </div>
+
+          <h2 id="cosa-serve">Cosa serve per fare l’ISEE online: documenti e dati</h2>
+          <p>Per compilare la <strong>DSU</strong> in modo fluido, prepara in anticipo:</p>
+
+          <div class="checklist" aria-label="Checklist documenti">
+            <div class="check">
+              <strong>Identità digitale</strong>
+              <small>SPID (consigliato) oppure CIE/CNS</small>
+            </div>
+            <div class="check">
+              <strong>Dati anagrafici nucleo</strong>
+              <small>Componenti, residenza, eventuali carichi</small>
+            </div>
+            <div class="check">
+              <strong>Redditi</strong>
+              <small>Riferiti all’anno fiscale previsto per l’ISEE</small>
+            </div>
+            <div class="check">
+              <strong>Patrimonio mobiliare</strong>
+              <small>Conti, giacenze, depositi, titoli, ecc.</small>
+            </div>
+            <div class="check">
+              <strong>Patrimonio immobiliare</strong>
+              <small>Immobili, quote, mutui residui</small>
+            </div>
+            <div class="check">
+              <strong>Altri dati utili</strong>
+              <small>Veicoli, disabilità, assegni/maintenances se rilevanti</small>
+            </div>
+          </div>
+
+          <h2 id="come-fare">Come fare l’ISEE online con SPID: passaggi chiari</h2>
+          <div class="steps">
+            <div class="step">
+              <strong>Accedi al portale INPS</strong>
+              Entra con SPID (oppure CIE/CNS) e apri il servizio ISEE/DSU precompilata.
+            </div>
+            <div class="step">
+              <strong>Seleziona DSU precompilata</strong>
+              Avvia una nuova dichiarazione e scegli la tipologia di ISEE di cui hai bisogno (se richiesto).
+            </div>
+            <div class="step">
+              <strong>Controlla i dati precompilati</strong>
+              Verifica anagrafica, redditi e patrimoni: se qualcosa non torna, integra o correggi.
+            </div>
+            <div class="step">
+              <strong>Inserisci dati mancanti</strong>
+              Aggiungi le informazioni che non risultano precompilate (sezione per sezione).
+            </div>
+            <div class="step">
+              <strong>Conferma e invia la DSU</strong>
+              Ricontrolla tutto, poi invia. Dopo l’invio, potrai scaricare ricevute e monitorare lo stato.
+            </div>
+            <div class="step">
+              <strong>Scarica l’attestazione ISEE</strong>
+              Quando disponibile, scarica il PDF dell’ISEE e conservalo per bonus/agevolazioni.
+            </div>
+          </div>
+
+          <!-- Ad placeholder -->
+          <div class="ad" role="note" aria-label="Spazio pubblicitario">
+            <strong>Spazio pubblicitario (AdSense)</strong>
+            Ottimo punto “in-article” per un annuncio responsive.
+          </div>
+
+          <h2 id="tempi">Tempi: quanto ci vuole a farlo e quanto ci vuole ad ottenerlo</h2>
+          <h3>Tempo per compilare la DSU online</h3>
+          <ul>
+            <li><strong>15–30 minuti</strong> se hai tutti i dati pronti e il nucleo è semplice</li>
+            <li><strong>30–60 minuti</strong> se devi recuperare informazioni o verificare più rapporti finanziari</li>
+          </ul>
+
+          <h3>Tempo per ottenere l’ISEE</h3>
+          <p>
+            I tempi possono variare: spesso l’attestazione è disponibile in tempi brevi dopo l’invio,
+            ma in presenza di verifiche o dati incompleti possono servire più giorni.
+          </p>
+
+          <div class="callout ok">
+            <strong>Tip per accelerare</strong>
+            Preparati prima con una lista dei conti (IBAN), giacenze e saldi, e i dati degli immobili:
+            riduci gli stop e completi l’invio in un’unica sessione.
+          </div>
+
+          <h2 id="faq">FAQ: le domande più cercate su Google</h2>
+
+          <details>
+            <summary>Posso fare l’ISEE online se non ho SPID?</summary>
+            <p>
+              Per fare tutto da solo online serve un’identità digitale (SPID, CIE o CNS).
+              Se non ce l’hai, puoi rivolgerti a un CAF o ottenere prima SPID.
+            </p>
+          </details>
+
+          <details>
+            <summary>Devo farlo ogni anno?</summary>
+            <p>
+              In genere sì: l’ISEE ha validità fino al 31 dicembre dell’anno di presentazione e va rinnovato
+              se ti serve anche l’anno successivo.
+            </p>
+          </details>
+
+          <details>
+            <summary>È meglio farlo da soli o con il CAF?</summary>
+            <p>
+              Se la tua situazione è semplice e hai dimestichezza con i servizi online, farlo da soli è comodo.
+              Se invece hai dubbi sul nucleo o dati complessi, il CAF può farti risparmiare errori e tempo.
+            </p>
+          </details>
+
+          <details>
+            <summary>Quali sono gli errori più comuni?</summary>
+            <p>
+              Dimenticare un rapporto finanziario, inserire importi non corretti, sbagliare la composizione del nucleo,
+              o non verificare attentamente i dati precompilati prima dell’invio.
+            </p>
+          </details>
+
+          <div class="cta" role="region" aria-label="Call to action">
+            <div class="left">
+              <h3>Vuoi rendere questo articolo “Adsense-friendly”?</h3>
+              <p>
+                Posso anche prepararti una versione con: sezioni H2/H3 ancora più “SEO”, meta tag avanzati,
+                tabella riassuntiva e blocchi annunci già posizionati (header / in-article / sidebar / fine articolo).
+              </p>
+            </div>
+            <a class="btn primary" href="#perche-online">Rileggi dall’inizio →</a>
+            <a class="btn" href="#faq">Vai alle FAQ →</a>
+          </div>
+
+          <div class="hr"></div>
+
+          <p style="color:var(--muted); font-size:13px; margin:0;">
+            Nota: questa pagina è informativa. Per casi particolari (separazioni, cambi nucleo, situazioni complesse),
+            valuta supporto CAF o professionista.
+          </p>
+        </article>
+
+        <footer>
+          <strong style="color:var(--text);">Guida Servizi</strong><br/>
+          Contenuto informativo su procedure e documentazione. Ultimo aggiornamento: 24/12/2025.
+          <div class="hr"></div>
+          <span>© <span id="year"></span> — Tutti i diritti riservati.</span>
+        </footer>
+      </main>
+
+      <aside class="toc" aria-label="Indice pagina">
+        <h3>Indice</h3>
+        <a href="#perche-online">Perché online</a>
+        <a href="#chi-puo">Chi può farlo</a>
+        <a href="#cosa-serve">Cosa serve</a>
+        <a href="#come-fare">Come si fa</a>
+        <a href="#tempi">Tempi</a>
+        <a href="#faq">FAQ</a>
+
+        <div class="hr"></div>
+
+        <div class="ad" role="note" aria-label="Spazio pubblicitario sidebar">
+          <strong>Spazio AdSense (Sidebar)</strong>
+          Formato consigliato: 300x250 / 300x600 (responsive).
+        </div>
+      </aside>
+    </div>
+  </div>
+
+  <script>
+    document.getElementById("year").textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
