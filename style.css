@@ -100,7 +100,6 @@ p {
 
 header p {
     color: var(--color-muted);
-    max-width: 70ch;
 }
 
 /* =========================
